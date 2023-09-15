@@ -1,0 +1,102 @@
+.header {
+    background: linear-gradient(to right, #007bff, #00bcd4);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+}
+
+.header-item {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.titulo {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.agregar-item {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#item-name {
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+#add-button {
+    background: linear-gradient(to bottom, #007bff, #00bcd4);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#add-button:hover {
+    background-color: #ff6600;
+    transform: scale(1.1);
+}
+
+#lista-compras {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    background: linear-gradient(to bottom, #007bff, #00bcd4);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out;
+}
+
+li.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delete-button {
+    background: linear-gradient(to bottom, rgb(81, 231, 81), rgb(57, 129, 57));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+    background-color: #ff0000;
+    transform: scale(1.1);
+}
+ 
